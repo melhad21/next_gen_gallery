@@ -1,0 +1,80 @@
+name: antigravity_gallery
+description: Antigravity - Next-generation Android Gallery and Photo Editor
+publish_to: 'https://antigravity.gallery'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  hooks_riverpod: ^2.4.9
+  
+  # Media Management
+  photo_manager: ^3.0.0
+  video_player: ^2.8.2
+  video_compress: ^3.1.2
+  media_kit: ^1.1.10
+  media_kit_video: ^1.2.4
+  media_kit_libs_video: ^1.0.7
+  
+  # AI/ML
+  google_mlkit_image_labeling: ^0.11.0
+  google_mlkit_selfie_segmentation: ^0.8.0
+  google_mlkit_object_detection: ^0.13.0
+  tflite_flutter: ^0.10.1
+  
+  # Image Processing & Editor
+  image: ^4.1.4
+  extended_image: ^8.2.0
+  photo_view: ^0.14.0
+  flutter_colorpicker: ^1.0.3
+  
+  # UI/UX
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  animations: ^2.0.8
+  
+  # Security
+  flutter_secure_storage: ^9.0.0
+  local_auth: ^2.1.8
+  crypto: ^3.0.3
+  
+  # Utils
+  path_provider: ^2.1.2
+  permission_handler: ^11.2.0
+  share_plus: ^7.2.2
+  http: ^1.1.2
+  uuid: ^4.3.1
+  intl: ^0.19.0
+  collection: ^1.18.0
+  equatable: ^2.0.5
+  get_it: ^7.6.5
+  dartz: ^0.10.1
+  rxdart: ^0.27.7
+  
+  # JSON & Storage
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  riverpod_generator: ^2.3.9
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/filters/
+    - assets/luts/
+    - assets/icons/
